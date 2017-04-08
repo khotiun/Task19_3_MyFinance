@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Task19_3_MyFinance</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="link_name">Ссылка на источник:</string>
+    <string name="link">http://minfin.com.ua/</string>
+</resources>

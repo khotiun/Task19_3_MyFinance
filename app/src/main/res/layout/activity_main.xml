@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    tools:context="com.example.mypc.task19_3_myfinance.MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorWhite"
+        android:text="Get the exchange rate"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/text_view_json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btn_start"
+        android:layout_below="@+id/btn_start"
+        android:text="ASK"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btn_start"
+        android:layout_below="@+id/btn_start"
+        android:text="BID"
+        android:textSize="40dp"/>
+
+    <TextView
+        android:id="@+id/tv_usd_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/text_view_json"
+        android:layout_below="@+id/text_view_json"
+        android:background="@color/colorWhite"
+        android:textSize="25dp"
+        tools:text="USD ASK"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_usd_ask"
+        android:layout_alignBottom="@+id/tv_usd_ask"
+        android:layout_centerHorizontal="true"
+        android:text="USD"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_usd_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:background="@color/colorWhite"
+        android:textSize="25dp"
+        tools:text="USD BID"/>
+
+    <TextView
+        android:id="@+id/tv_eur_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_usd_ask"
+        android:layout_below="@+id/tv_usd_ask"
+        android:background="@color/colorWhite"
+        android:textSize="25dp"
+        tools:text="EUR ASK"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:text="EUR"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_eur_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_usd_bid"
+        android:layout_below="@+id/tv_usd_bid"
+        android:background="@color/colorWhite"
+        android:textSize="25dp"
+        tools:text="EUR BID"/>
+
+    <TextView
+        android:id="@+id/tv_rur_ask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_eur_ask"
+        android:layout_below="@+id/tv_eur_ask"
+        android:background="@color/colorWhite"
+        android:textSize="25dp"
+        tools:text="RUR ASK"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:text="RUR"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/tv_rur_bid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv_eur_bid"
+        android:layout_below="@+id/tv_eur_bid"
+        android:background="@color/colorWhite"
+        android:textSize="25dp"
+        tools:text="RUR BID"/>
+
+    <TextView
+        android:id="@+id/text_viev_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/link_name"/>
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/text_viev_link"
+        android:text="@string/link"/>
+
+</RelativeLayout>
